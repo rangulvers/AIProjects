@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rubik's Cube Guides</title>
+<meta name="description" content="Printable picture guides for learning the Rubik's Cube: Layer-by-Layer and CFOP.">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="brand" href="../../">AI Projects</a><nav><a href="../../">All projects</a></nav></div></header>
+<main class="wrap proj">
+  <h1>Rubik's Cube Guides</h1>
+  <p class="lead">Two printable, picture-based guides for kids (in German). Each move is drawn as a small cube with an arrow, so they can lay the sheet next to the cube and follow along.</p>
+  <div class="guides">
+    <article class="guide">
+      <h2>Schicht für Schicht</h2>
+      <p>The classic beginner method in 8 steps. Includes the move notation explained for kids, every case with a picture, and a one-page cheat sheet. 12 pages, A4.</p>
+      <div class="btns"><a class="btn primary" href="guides/schicht-fuer-schicht.pdf">PDF</a><a class="btn" href="guides/schicht-fuer-schicht.html">Read online</a></div>
+    </article>
+    <article class="guide">
+      <h2>CFOP</h2>
+      <p>The speedcuber method, with the beginner-friendly 2-look OLL and PLL. Cross, F2L cases, 10 OLL and 6 PLL algorithms, a 4-week practice plan and a cheat sheet. 12 pages, A4.</p>
+      <div class="btns"><a class="btn primary" href="guides/cfop.pdf">PDF</a><a class="btn" href="guides/cfop.html">Read online</a></div>
+    </article>
+  </div>
+  <h2 class="sec">How it was made</h2>
+  <ul>
+    <li>A small cube simulator (<code>src/cube.py</code>) turns every algorithm into the starting position shown in the pictures.</li>
+    <li>Every algorithm was checked in the simulator. For CFOP, all 288 possible last-layer states were solved with the two-look procedure.</li>
+    <li>The pages are plain HTML with inline SVG, rendered to PDF with Chromium.</li>
+  </ul>
+  <h2 class="sec">Rebuild it</h2>
+  <p>The commands are in the project README in the repo (<code>projects/rubiks-cube/README.md</code>). Source is in <code>src/</code>.</p>
+</main>
+<footer class="site"><div class="wrap">Part of AI Projects. Made with Claude.</div></footer>
+</body>
+</html>

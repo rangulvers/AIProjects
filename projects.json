@@ -1,0 +1,11 @@
+[
+  {
+    "slug": "rubiks-cube",
+    "title": "Rubik's Cube Guides",
+    "summary": "Printable, picture-based guides for kids: Layer-by-Layer and CFOP. Every move is checked in a cube simulator.",
+    "tags": ["education", "kids", "german", "pdf"],
+    "status": "live",
+    "date": "2026-10-11",
+    "thumbnail": "projects/rubiks-cube/thumbnail.svg"
+  }
+]

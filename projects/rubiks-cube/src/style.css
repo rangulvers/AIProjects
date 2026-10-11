@@ -1,0 +1,174 @@
+@page { size: A4; margin: 11mm 12mm 13mm 12mm; }
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: #fff; }
+body { font-family: 'Inter', 'DejaVu Sans', sans-serif; color: #1b1f27; font-size: 14.5px; line-height: 1.42; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+svg { display: block; }
+b { font-weight: 750; }
+.str { color: #E11D8A; font-weight: 900; }
+.page { page-break-after: always; break-after: page; position: relative; }
+.page:last-child { page-break-after: auto; }
+p { margin: 0 0 8px; }
+h1, h2, h3 { font-family: 'Inter Display', 'Inter', sans-serif; margin: 0; letter-spacing: -0.01em; }
+h3 { font-size: 15px; font-weight: 800; margin: 6px 0 4px; }
+.small { font-size: 12px; color: #4b5563; }
+.lead { font-size: 15.5px; margin: 10px 0 10px; }
+.ptitle { font-size: 34px; font-weight: 850; margin: 4px 0 4px; }
+
+/* ---------- cover */
+.cover .covertop { display: flex; gap: 14px; align-items: center; margin-top: 12px; }
+.covertext { flex: 1; }
+.eyebrow { display: inline-block; background: #FFD200; color: #1b1f27; font-weight: 800; padding: 4px 12px; border-radius: 999px; font-size: 13px; letter-spacing: .04em; text-transform: uppercase; }
+.title { font-size: 50px; line-height: 1.02; font-weight: 900; margin: 12px 0 12px; }
+.tag { font-size: 16px; color: #374151; max-width: 330px; }
+.owner { margin-top: 14px; font-size: 14px; font-weight: 650; display: flex; align-items: flex-end; gap: 8px; }
+.blank { display: inline-block; border-bottom: 2px dotted #9ca3af; width: 170px; height: 18px; }
+.blank.short { width: 110px; }
+.coverpics { display: flex; align-items: center; }
+.cparrow { font-size: 34px; color: #E11D8A; margin: 0 -6px; }
+.ovh { font-size: 22px; font-weight: 850; margin: 26px 0 10px; }
+.overview { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px 10px; }
+.ov { background: #F4F6FA; border-radius: 14px; padding: 8px 6px 10px; display: flex; flex-direction: column; align-items: center; position: relative; text-align: center; }
+.ov span { font-weight: 750; font-size: 13px; line-height: 1.2; margin-top: 2px; }
+.ovn { position: absolute; left: 8px; top: 8px; color: #fff; font-weight: 900; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; }
+
+/* ---------- boxes */
+.golden { margin-top: 14px; background: #FFF6CC; border: 2px solid #FFD200; border-radius: 14px; padding: 10px 14px; font-size: 14.5px; }
+.done { margin-top: 12px; background: #E9F8EF; border: 2px solid #16A34A; border-radius: 14px; padding: 10px 14px; }
+.tip { margin-top: 10px; background: #EEF4FF; border-radius: 14px; padding: 9px 14px; }
+.note { margin-top: 12px; background: #F4F6FA; border-radius: 14px; padding: 9px 14px; font-size: 13px; color: #374151; }
+.trap { margin: 8px 0 10px; background: #FFE8EC; border: 2px solid #D7263D; border-radius: 14px; padding: 9px 14px; font-size: 14.5px; }
+.box { background: #F4F6FA; border-radius: 14px; padding: 10px 14px; }
+.box.gray { background: #fff; border: 2px solid #E5E7EB; }
+.twocol { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
+.pairs div { display: flex; align-items: center; gap: 6px; margin: 4px 0; font-weight: 650; }
+.sw { display: inline-block; width: 20px; height: 20px; border-radius: 5px; border: 3px solid #1d1d1f; }
+.sw.big { width: 38px; height: 38px; border-radius: 8px; flex: none; }
+.sw.ring { border: 4px dashed #E11D8A; border-radius: 50%; background: #fff; }
+.legend { display: flex; gap: 12px; align-items: flex-start; }
+.legend h3 { margin-top: 0; }
+
+/* ---------- pieces */
+.pieces { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.piece { background: #F4F6FA; border-radius: 16px; padding: 8px 12px 12px; display: flex; flex-direction: column; align-items: center; text-align: center; }
+.piece h3 { font-size: 18px; }
+
+/* ---------- notation */
+.lettertable { display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; margin: 6px 0 4px; }
+.lettertable div { background: #F4F6FA; border-radius: 12px; padding: 6px 4px; text-align: center; display: flex; flex-direction: column; }
+.lettertable b { font-size: 30px; font-weight: 900; line-height: 1.1; }
+.lettertable span { font-size: 11.5px; color: #6b7280; }
+.lettertable i { font-style: normal; font-weight: 750; font-size: 14px; }
+.lettertable .warn { background: #FFE8EC; outline: 2px solid #D7263D; }
+.rules { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 10px; margin-bottom: 10px; }
+.rule { display: flex; gap: 10px; align-items: flex-start; background: #F4F6FA; border-radius: 12px; padding: 9px 11px; }
+.rule p { margin: 0; font-size: 12.5px; }
+.rk { font-size: 24px; font-weight: 900; min-width: 40px; text-align: center; background: #fff; border-radius: 10px; padding: 2px 4px; border: 2px solid #E5E7EB; }
+.notgrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px 8px; }
+.nc { display: flex; flex-direction: column; align-items: center; text-align: center; }
+.nl { font-size: 26px; font-weight: 900; margin-top: -2px; }
+.ncap { font-size: 12.5px; line-height: 1.25; color: #374151; }
+
+/* ---------- step header */
+.stephead { display: flex; align-items: center; gap: 14px; border-bottom: 4px solid var(--c); padding-bottom: 8px; }
+.stephead .num { width: 58px; height: 58px; border-radius: 16px; background: var(--c); color: #fff; font-size: 34px; font-weight: 900; display: flex; align-items: center; justify-content: center; flex: none; }
+.stephead .ht { flex: 1; }
+.kicker { font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; color: var(--c); }
+.stephead h1 { font-size: 30px; font-weight: 900; line-height: 1.1; }
+.stephead .sub { color: #4b5563; font-size: 14px; }
+.stephead .goal { display: flex; flex-direction: column; align-items: center; background: #F4F6FA; border-radius: 14px; padding: 2px 8px 6px; }
+.stephead .goal span { font-size: 10.5px; font-weight: 700; color: #4b5563; }
+
+/* ---------- cases */
+.cases3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 6px; }
+.cases2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 8px; }
+.case { background: #F4F6FA; border-radius: 16px; padding: 10px 12px 10px; display: flex; flex-direction: column; align-items: center; text-align: center; position: relative; }
+.case p { font-size: 13px; margin: 0 0 5px; }
+.case h3 { line-height: 1.25; }
+.case.sm { padding: 8px 8px; }
+.ctag { position: absolute; left: 10px; top: 10px; background: #1b1f27; color: #fff; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; }
+.times { font-size: 26px; font-weight: 900; color: #E11D8A; line-height: 1; }
+h3.ok { color: #16A34A; font-size: 18px; }
+h3.bad { color: #D7263D; font-size: 18px; }
+.steps { margin: 6px 0 6px; padding-left: 0; list-style: none; counter-reset: s; }
+.steps li { counter-increment: s; position: relative; padding-left: 36px; margin: 0 0 7px; font-size: 14px; }
+.steps li::before { content: counter(s); position: absolute; left: 0; top: -1px; width: 25px; height: 25px; border-radius: 50%; background: #1b1f27; color: #fff; font-weight: 850; font-size: 13px; display: flex; align-items: center; justify-content: center; }
+.special { margin-top: 12px; display: flex; gap: 12px; align-items: center; background: #FFF1E6; border: 2px solid #FF7A00; border-radius: 16px; padding: 8px 14px; }
+.special h3 { margin-top: 0; }
+.special p { margin: 0; }
+
+/* ---------- algorithms */
+.trick { background: #FDF2F8; border: 2px solid #F9A8D4; border-radius: 16px; padding: 8px 12px 10px; margin: 8px 0 10px; }
+.trickhead { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 4px; }
+.spell { font-weight: 900; font-size: 16px; color: #BE185D; }
+.say { font-size: 13px; color: #6b7280; font-style: italic; }
+.algtxt { font-family: 'Inter', sans-serif; font-weight: 850; font-size: 20px; letter-spacing: .05em; background: #fff; border-radius: 8px; padding: 1px 10px; border: 2px solid #1b1f27; white-space: nowrap; }
+.strip { display: flex; flex-wrap: wrap; gap: 2px; justify-content: center; }
+.mv { display: flex; flex-direction: column; align-items: center; position: relative; }
+.mv b { font-size: 18px; font-weight: 900; margin-top: -3px; }
+.mvnum { position: absolute; left: 0; top: 0; font-size: 10px; font-weight: 800; color: #9ca3af; }
+.strip.tight { margin-top: 6px; }
+.strip.tight .mv b { font-size: 15px; }
+.case .algtxt { font-size: 15.5px; padding: 1px 8px; }
+
+/* ---------- step 2 flow */
+.flow { display: flex; align-items: center; justify-content: center; gap: 14px; margin: 8px 0; }
+.fbox { background: #F4F6FA; border-radius: 16px; padding: 8px; display: flex; flex-direction: column; align-items: center; }
+.fbox span { font-weight: 700; font-size: 13px; }
+.farrow { display: flex; flex-direction: column; align-items: center; }
+.farrow b { font-size: 22px; font-weight: 900; }
+.farrow span { font-size: 12px; color: #4b5563; }
+
+/* ---------- step 5 */
+.ygrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 4px; }
+.ycase { background: #F4F6FA; border-radius: 16px; padding: 10px 8px; display: flex; flex-direction: column; align-items: center; text-align: center; }
+.ycase p { font-size: 12.5px; margin: 0; }
+.front { font-size: 11px; font-weight: 800; color: #6b7280; margin-top: 2px; }
+.front::before { content: '▼ '; color: #9ca3af; }
+.netinfo { font-size: 13px; color: #374151; background: #F4F6FA; border-radius: 12px; padding: 7px 12px; margin-bottom: 6px; }
+
+/* ---------- step 8 */
+.s8 { display: flex; gap: 12px; align-items: center; }
+.s8l { flex: 1; }
+.s8r { display: flex; flex-direction: column; align-items: center; background: #F4F6FA; border-radius: 16px; padding: 6px 10px 8px; }
+.s8r span { font-size: 12px; font-weight: 700; }
+.panic { display: flex; gap: 12px; align-items: center; background: #FFF6CC; border: 2px solid #FFD200; border-radius: 16px; padding: 4px 14px; margin-top: 8px; }
+.panic h3 { margin-top: 0; font-size: 17px; }
+.win { display: flex; gap: 14px; align-items: center; background: #E9F8EF; border: 2px solid #16A34A; border-radius: 16px; padding: 4px 14px; margin-top: 10px; }
+.win h2 { font-size: 26px; font-weight: 900; color: #15803D; }
+
+/* ---------- cheat sheet */
+.ctab { width: 100%; border-collapse: separate; border-spacing: 0 5px; }
+.ctab td { background: #F4F6FA; padding: 4px 8px; vertical-align: middle; font-size: 12.5px; line-height: 1.3; }
+.ctab td.cn { width: 30px; color: #fff; font-weight: 900; font-size: 18px; text-align: center; border-radius: 10px 0 0 10px; }
+.ctab td.cg { width: 66px; padding: 2px 4px; }
+.ctab td.calg { border-radius: 0 10px 10px 0; text-align: right; }
+.ctab .algtxt { font-size: 15px; padding: 1px 7px; }
+.minilegend { display: grid; grid-template-columns: repeat(10, 1fr); margin-top: 8px; }
+.ml { display: flex; flex-direction: column; align-items: center; }
+.ml b { font-size: 14px; font-weight: 900; margin-top: -2px; }
+
+.doit { display: flex; align-items: center; gap: 6px; margin-top: 4px; }
+.doit .mv b { font-size: 17px; }
+.then { font-size: 12px; font-weight: 700; color: #6b7280; }
+.hcase { display: flex; gap: 14px; align-items: center; background: #F4F6FA; border-radius: 16px; padding: 8px 14px; margin-top: 10px; }
+.hcase svg { flex: none; }
+.hc { flex: 1; }
+.hc h3 { font-size: 15.5px; margin-bottom: 6px; }
+.hc .strip { justify-content: flex-start; flex-wrap: nowrap; }
+.spellname { font-weight: 900; color: #BE185D; font-size: 14px; display: flex; align-items: center; gap: 10px; }
+.netwrap { position: relative; padding: 18px 40px 18px; }
+.nlab { position: absolute; font-size: 11.5px; font-weight: 800; color: #6b7280; }
+.nt { top: 0; left: 50%; transform: translateX(-50%); }
+.nb { bottom: 0; left: 50%; transform: translateX(-50%); color: #1b1f27; }
+.nl2 { left: 0; top: 50%; transform: translateY(-50%); }
+.nr { right: 0; top: 50%; transform: translateY(-50%); }
+.ctab td { font-size: 13.5px; padding: 6px 10px; }
+.ctab td.cg { width: 80px; }
+.ctab .algtxt { font-size: 17px; }
+.cover .title { font-size: 54px; }
+.ov span { font-size: 14px; }
+
+.done.withpic { display: flex; gap: 14px; align-items: center; }
+.done.withpic svg { flex: none; background: #fff; border-radius: 12px; }
+
+@media screen { body { max-width: 794px; margin: 0 auto; padding: 16px; } .page { border-bottom: 2px dashed #cfd3da; padding-bottom: 28px; margin-bottom: 28px; } }

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Projects</title>
+<meta name="description" content="A collection of small projects built with AI, shared as websites, PDFs and source code.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="./">AI Projects</a>
+  <nav><a href="https://github.com/" id="gh">GitHub</a></nav>
+</div></header>
+<main class="wrap">
+  <section class="hero">
+    <h1>Things I built with AI.</h1>
+    <p>Small, useful projects. Each one has its own page, and the source is in the repo.</p>
+    <div class="filters" id="filters" aria-label="Filter by tag"></div>
+  </section>
+  <section class="grid" id="grid" aria-live="polite"></section>
+</main>
+<footer class="site"><div class="wrap">Made with Claude. Add a project: see the README.</div></footer>
+<script>
+(async function () {
+  var m = location.hostname.match(/^(.+)\.github\.io$/);
+  if (m) document.getElementById('gh').href = 'https://github.com/' + m[1] + '/AIProjects';
+  var grid = document.getElementById('grid'), filters = document.getElementById('filters');
+  var projects = [], active = null;
+  try { projects = await (await fetch('projects.json')).json(); }
+  catch (e) { grid.innerHTML = '<p class="empty">Could not load projects.json. If you opened this file directly, start a local server: <code>python3 -m http.server</code></p>'; return; }
+  projects = projects.filter(function (p) { return p.status !== 'draft'; }).sort(function (a, b) { return (b.date || '').localeCompare(a.date || ''); });
+  var tags = Array.from(new Set([].concat.apply([], projects.map(function (p) { return p.tags || []; })))).sort();
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]; }); }
+  function render() {
+    var list = projects.filter(function (p) { return !active || (p.tags || []).indexOf(active) > -1; });
+    grid.innerHTML = list.length ? list.map(function (p) {
+      var thumb = p.thumbnail ? ' style="background-image:url(' + esc(p.thumbnail) + ')"' : '';
+      return '<a class="card" href="projects/' + esc(p.slug) + '/"><div class="thumb"' + thumb + '></div><div class="body"><h2>' + esc(p.title) + '</h2><p>' + esc(p.summary) + '</p><div class="tags">' + (p.tags || []).map(function (t) { return '<span class="tag">' + esc(t) + '</span>'; }).join('') + '</div></div></a>';
+    }).join('') : '<p class="empty">No projects with this tag yet.</p>';
+  }
+  filters.innerHTML = tags.length > 1 ? tags.map(function (t) { return '<button class="chip" aria-pressed="false" data-t="' + esc(t) + '">' + esc(t) + '</button>'; }).join('') : '';
+  filters.addEventListener('click', function (e) {
+    var b = e.target.closest('.chip'); if (!b) return;
+    active = active === b.dataset.t ? null : b.dataset.t;
+    filters.querySelectorAll('.chip').forEach(function (c) { c.setAttribute('aria-pressed', String(c.dataset.t === active)); });
+    render();
+  });
+  render();
+})();
+</script>
+</body>
+</html>
