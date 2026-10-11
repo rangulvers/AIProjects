@@ -24,7 +24,7 @@ scripts/new_project.py  creates a project from the template
 | Project | What it is |
 | --- | --- |
 | [Rubik's Cube Guides](projects/rubiks-cube/) | Printable picture guides for kids: Layer-by-Layer and CFOP (German). |
-| [LogiPlan](https://github.com/rangulvers/LogiPlan) ([live](https://rangulvers.github.io/LogiPlan/)) | Plan a factory layout and its in-plant logistics in the browser, then simulate it. Lives in its own repo. |
+| [LogiPlan](https://github.com/rangulvers/LogiPlan) ([how it works](https://rangulvers.github.io/LogiPlan/how)) | Plan a factory layout and its in-plant logistics in the browser, then simulate it. Lives in its own repo. |
 
 ## Add a project
 
