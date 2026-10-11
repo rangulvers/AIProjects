@@ -27,5 +27,172 @@
     "url": "https://rangulvers.github.io/LogiPlan/how",
     "repo": "https://github.com/rangulvers/LogiPlan",
     "thumbnail": "projects/logiplan/thumbnail.svg"
+  },
+  {
+    "slug": "familien-werkstatt",
+    "title": "Familien-Werkstatt",
+    "summary": "Small interactive pages to explore with your kids, one per topic: moon phases, rainbows, magnets, the water cycle and more. In German.",
+    "tags": [
+      "education",
+      "kids",
+      "german"
+    ],
+    "status": "live",
+    "date": "2026-04-27",
+    "url": "https://rangulvers.github.io/familien-werkstatt/",
+    "repo": "https://github.com/rangulvers/familien-werkstatt",
+    "thumbnail": "projects/familien-werkstatt/thumbnail.svg"
+  },
+  {
+    "slug": "agent-rodeo",
+    "title": "Agent Rodeo",
+    "summary": "Different AI coding agents get the same brief: build a 3D Lego city in the browser. Click through each attempt and compare.",
+    "tags": [
+      "ai-agents"
+    ],
+    "status": "live",
+    "date": "2025-11-30",
+    "url": "https://rangulvers.github.io/agent-rodeo/",
+    "repo": "https://github.com/rangulvers/agent-rodeo",
+    "thumbnail": "projects/agent-rodeo/thumbnail.svg"
+  },
+  {
+    "slug": "rage-o-meter",
+    "title": "RAGE-o-meter",
+    "summary": "A Claude Code plugin that counts how often you scold your agents per session. The only AI benchmark you can trust.",
+    "tags": [
+      "ai-agents",
+      "tool"
+    ],
+    "status": "live",
+    "date": "2026-08-19",
+    "url": "https://rangulvers.github.io/rage-o-meter/",
+    "repo": "https://github.com/rangulvers/rage-o-meter",
+    "thumbnail": "projects/rage-o-meter/thumbnail.svg"
+  },
+  {
+    "slug": "pusteblume",
+    "title": "Pusteblume",
+    "summary": "A painted page about dandelions. Blow into your microphone and the seeds fly away. In German.",
+    "tags": [
+      "kids",
+      "german",
+      "education"
+    ],
+    "status": "live",
+    "date": "2026-04-20",
+    "url": "https://rangulvers.github.io/pusteblume/",
+    "repo": "https://github.com/rangulvers/pusteblume",
+    "thumbnail": "projects/pusteblume/thumbnail.svg"
+  },
+  {
+    "slug": "farbpunkte",
+    "title": "Farbpunkte",
+    "summary": "Fast tapping game for 2 to 4 players on one screen. When your color shows up, tap it before anyone else. In German.",
+    "tags": [
+      "game",
+      "kids",
+      "german"
+    ],
+    "status": "live",
+    "date": "2026-07-14",
+    "url": "https://rangulvers.github.io/farbpunkte-spiel/",
+    "repo": "https://github.com/rangulvers/farbpunkte-spiel",
+    "thumbnail": "projects/farbpunkte/thumbnail.svg"
+  },
+  {
+    "slug": "phantomcast",
+    "title": "PhantomCast",
+    "summary": "Projection mapping with any projector. Map videos onto walls or windows and line up the surfaces from your phone.",
+    "tags": [
+      "hardware",
+      "tool"
+    ],
+    "status": "live",
+    "date": "2026-04-08",
+    "url": "https://rangulvers.github.io/phantomcast/",
+    "repo": "https://github.com/rangulvers/phantomcast",
+    "thumbnail": "projects/phantomcast/thumbnail.svg"
+  },
+  {
+    "slug": "argus",
+    "title": "Argus",
+    "summary": "Self-hosted scanner for your home network. Finds every device, flags risky ports and known CVEs, and tells you when something new shows up.",
+    "tags": [
+      "home-lab",
+      "tool"
+    ],
+    "status": "live",
+    "date": "2026-05-08",
+    "url": "https://rangulvers.github.io/argus/",
+    "repo": "https://github.com/rangulvers/argus",
+    "thumbnail": "projects/argus/thumbnail.svg"
+  },
+  {
+    "slug": "wiki-graph",
+    "title": "Wiki Graph",
+    "summary": "Finds the shortest path between any two Wikipedia articles and draws the links as a graph you can explore.",
+    "tags": [
+      "tool"
+    ],
+    "status": "live",
+    "date": "2025-11-18",
+    "url": "https://wikigraph.up.railway.app",
+    "repo": "https://github.com/rangulvers/Wiki_Graph",
+    "thumbnail": "projects/wiki-graph/thumbnail.svg"
+  },
+  {
+    "slug": "dalli-klick",
+    "title": "Dalli-Klick",
+    "summary": "The TV guessing game as a desktop app for parties. A picture hides under hexagon tiles, and the earlier you guess, the more points.",
+    "tags": [
+      "game"
+    ],
+    "status": "live",
+    "date": "2026-02-12",
+    "url": "https://github.com/rangulvers/dalli-klick",
+    "repo": "https://github.com/rangulvers/dalli-klick",
+    "thumbnail": "projects/dalli-klick/thumbnail.svg"
+  },
+  {
+    "slug": "claude-buddy",
+    "title": "Claude Buddy",
+    "summary": "A tiny OLED desk display that shows what Claude Code is doing, with a mascot that reacts live. hermes-buddy is the Hermes version.",
+    "tags": [
+      "hardware",
+      "ai-agents"
+    ],
+    "status": "live",
+    "date": "2026-05-27",
+    "url": "https://github.com/rangulvers/claude-buddy",
+    "repo": "https://github.com/rangulvers/claude-buddy",
+    "thumbnail": "projects/claude-buddy/thumbnail.svg"
+  },
+  {
+    "slug": "claude-monitor",
+    "title": "Claude Monitor",
+    "summary": "Live dashboard for every Claude Code session on your machine: prompts, tools, sub-agents, tokens and cost.",
+    "tags": [
+      "ai-agents",
+      "tool"
+    ],
+    "status": "live",
+    "date": "2026-03-26",
+    "url": "https://github.com/rangulvers/claude-monitor",
+    "repo": "https://github.com/rangulvers/claude-monitor",
+    "thumbnail": "projects/claude-monitor/thumbnail.svg"
+  },
+  {
+    "slug": "nohello-agents",
+    "title": "NoHello for Agents",
+    "summary": "One-page guide: give your coding agent the whole request in the first message, not \"hey, can you help me?\"",
+    "tags": [
+      "ai-agents"
+    ],
+    "status": "live",
+    "date": "2026-08-19",
+    "url": "https://github.com/rangulvers/nohello-agents",
+    "repo": "https://github.com/rangulvers/nohello-agents",
+    "thumbnail": "projects/nohello-agents/thumbnail.svg"
   }
 ]
