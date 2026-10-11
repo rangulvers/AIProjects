@@ -24,6 +24,7 @@ scripts/new_project.py  creates a project from the template
 | Project | What it is |
 | --- | --- |
 | [Rubik's Cube Guides](projects/rubiks-cube/) | Printable picture guides for kids: Layer-by-Layer and CFOP (German). |
+| [LogiPlan](https://github.com/rangulvers/LogiPlan) ([live](https://rangulvers.github.io/LogiPlan/)) | Plan a factory layout and its in-plant logistics in the browser, then simulate it. Lives in its own repo. |
 
 ## Add a project
 
@@ -32,6 +33,8 @@ python3 scripts/new_project.py my-project "My Project" "One sentence summary." t
 ```
 
 This copies `templates/project/` to `projects/my-project/` and adds a **draft** entry to `projects.json`. Edit the page, then set `"status": "live"` so it shows up on the home page. Add a `thumbnail` path (16:9 image or SVG) if you want a picture on the card.
+
+Projects that live in their own repo (like LogiPlan) get a `url` (live site) and `repo` entry in `projects.json` instead of a project page. Only a thumbnail goes in `projects/<slug>/`.
 
 Conventions: lowercase-hyphen folder names, commit generated output (HTML, PDF) so the site needs no build step, keep each project self-contained.
 

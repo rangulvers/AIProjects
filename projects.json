@@ -3,9 +3,29 @@
     "slug": "rubiks-cube",
     "title": "Rubik's Cube Guides",
     "summary": "Printable, picture-based guides for kids: Layer-by-Layer and CFOP. Every move is checked in a cube simulator.",
-    "tags": ["education", "kids", "german", "pdf"],
+    "tags": [
+      "education",
+      "kids",
+      "german",
+      "pdf"
+    ],
     "status": "live",
     "date": "2026-10-11",
     "thumbnail": "projects/rubiks-cube/thumbnail.svg"
+  },
+  {
+    "slug": "logiplan",
+    "title": "LogiPlan",
+    "summary": "Plan a factory layout and its in-plant logistics in the browser, then watch it run. Roads, stations, AGVs, forklifts, live simulation and KPIs.",
+    "tags": [
+      "logistics",
+      "simulation",
+      "tool"
+    ],
+    "status": "live",
+    "date": "2026-10-10",
+    "url": "https://rangulvers.github.io/LogiPlan/",
+    "repo": "https://github.com/rangulvers/LogiPlan",
+    "thumbnail": "projects/logiplan/thumbnail.svg"
   }
 ]

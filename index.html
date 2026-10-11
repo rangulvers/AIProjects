@@ -37,7 +37,9 @@
     var list = projects.filter(function (p) { return !active || (p.tags || []).indexOf(active) > -1; });
     grid.innerHTML = list.length ? list.map(function (p) {
       var thumb = p.thumbnail ? ' style="background-image:url(' + esc(p.thumbnail) + ')"' : '';
-      return '<a class="card" href="projects/' + esc(p.slug) + '/"><div class="thumb"' + thumb + '></div><div class="body"><h2>' + esc(p.title) + '</h2><p>' + esc(p.summary) + '</p><div class="tags">' + (p.tags || []).map(function (t) { return '<span class="tag">' + esc(t) + '</span>'; }).join('') + '</div></div></a>';
+      var ext = p.url ? ' target="_blank" rel="noopener"' : '';
+      var href = p.url ? p.url : 'projects/' + p.slug + '/';
+      return '<a class="card" href="' + esc(href) + '"' + ext + '><div class="thumb"' + thumb + '></div><div class="body"><h2>' + esc(p.title) + '</h2><p>' + esc(p.summary) + '</p><div class="tags">' + (p.tags || []).map(function (t) { return '<span class="tag">' + esc(t) + '</span>'; }).join('') + '</div></div></a>';
     }).join('') : '<p class="empty">No projects with this tag yet.</p>';
   }
   filters.innerHTML = tags.length > 1 ? tags.map(function (t) { return '<button class="chip" aria-pressed="false" data-t="' + esc(t) + '">' + esc(t) + '</button>'; }).join('') : '';
